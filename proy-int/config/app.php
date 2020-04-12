@@ -161,6 +161,8 @@ return [
         Illuminate\Translation\TranslationServiceProvider::class,
         Illuminate\Validation\ValidationServiceProvider::class,
         Illuminate\View\ViewServiceProvider::class,
+        Gloudemans\Shoppingcart\ShoppingcartServiceProvider::class,
+        'Cart' => Gloudemans\Shoppingcart\Facades\Cart::class,
 
         /*
          * Package Service Providers...

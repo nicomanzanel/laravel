@@ -30,6 +30,7 @@ Route::get('/index', function () {
  Route::get('/ayuda', function () {
     return view ("ayuda");
  });
+ Route::post('/ayuda', 'ayudaController@agregarConsulta');
 
  Route::get('/carrito', function () {
     return view ("carrito");
@@ -42,9 +43,10 @@ Route::get('/index', function () {
  Route::get('/miperfil', function () {
    return view ("miperfil");
 });
+Route::post('/miperfil', 'perfilController@editarDatos');
 
-Route::get('/quienessomos', function () {
-   return view ("quienessomos");
+Route::get('/contacto', function () {
+   return view ("contacto");
 });
 
 Route::get('/productos', "productoscontroller@lsitado" );
